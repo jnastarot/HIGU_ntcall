@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HIGU_ntcall", "src\HIGU_ntcall\HIGU_ntcall.vcxproj", "{933FCDD7-35EC-4902-BC6B-C19044C493CE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{57798E33-0084-4F84-810D-E5E81B527464} = {57798E33-0084-4F84-810D-E5E81B527464}
+		{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7} = {AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "object_cvt64to32", "src\object_cvt64to32\object_cvt64to32.vcxproj", "{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_app", "src\test_app\test_app.vcxproj", "{D3BB02A9-0655-4FC0-8CC3-711CEB494619}"
+	ProjectSection(ProjectDependencies) = postProject
+		{933FCDD7-35EC-4902-BC6B-C19044C493CE} = {933FCDD7-35EC-4902-BC6B-C19044C493CE}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HIGU_ntcall_3264", "src\HIGU_ntcall_3264\HIGU_ntcall_3264.vcxproj", "{57798E33-0084-4F84-810D-E5E81B527464}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7} = {AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "custom wow64", "custom wow64", "{DF0E3690-E61F-4DBE-91F9-27424F46C73D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{933FCDD7-35EC-4902-BC6B-C19044C493CE}.Debug|x64.ActiveCfg = Debug|x64
+		{933FCDD7-35EC-4902-BC6B-C19044C493CE}.Debug|x64.Build.0 = Debug|x64
+		{933FCDD7-35EC-4902-BC6B-C19044C493CE}.Debug|x86.ActiveCfg = Debug|Win32
+		{933FCDD7-35EC-4902-BC6B-C19044C493CE}.Debug|x86.Build.0 = Debug|Win32
+		{933FCDD7-35EC-4902-BC6B-C19044C493CE}.Release|x64.ActiveCfg = Release|x64
+		{933FCDD7-35EC-4902-BC6B-C19044C493CE}.Release|x64.Build.0 = Release|x64
+		{933FCDD7-35EC-4902-BC6B-C19044C493CE}.Release|x86.ActiveCfg = Release|Win32
+		{933FCDD7-35EC-4902-BC6B-C19044C493CE}.Release|x86.Build.0 = Release|Win32
+		{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7}.Debug|x64.ActiveCfg = Debug|x64
+		{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7}.Debug|x64.Build.0 = Debug|x64
+		{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7}.Debug|x86.ActiveCfg = Debug|x64
+		{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7}.Release|x64.ActiveCfg = Release|x64
+		{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7}.Release|x86.ActiveCfg = Release|x64
+		{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7}.Release|x86.Build.0 = Release|x64
+		{D3BB02A9-0655-4FC0-8CC3-711CEB494619}.Debug|x64.ActiveCfg = Debug|x64
+		{D3BB02A9-0655-4FC0-8CC3-711CEB494619}.Debug|x64.Build.0 = Debug|x64
+		{D3BB02A9-0655-4FC0-8CC3-711CEB494619}.Debug|x86.ActiveCfg = Debug|Win32
+		{D3BB02A9-0655-4FC0-8CC3-711CEB494619}.Debug|x86.Build.0 = Debug|Win32
+		{D3BB02A9-0655-4FC0-8CC3-711CEB494619}.Release|x64.ActiveCfg = Release|x64
+		{D3BB02A9-0655-4FC0-8CC3-711CEB494619}.Release|x64.Build.0 = Release|x64
+		{D3BB02A9-0655-4FC0-8CC3-711CEB494619}.Release|x86.ActiveCfg = Release|Win32
+		{D3BB02A9-0655-4FC0-8CC3-711CEB494619}.Release|x86.Build.0 = Release|Win32
+		{57798E33-0084-4F84-810D-E5E81B527464}.Debug|x64.ActiveCfg = Debug|x64
+		{57798E33-0084-4F84-810D-E5E81B527464}.Debug|x64.Build.0 = Debug|x64
+		{57798E33-0084-4F84-810D-E5E81B527464}.Debug|x86.ActiveCfg = Debug|x64
+		{57798E33-0084-4F84-810D-E5E81B527464}.Debug|x86.Build.0 = Debug|x64
+		{57798E33-0084-4F84-810D-E5E81B527464}.Release|x64.ActiveCfg = Release|x64
+		{57798E33-0084-4F84-810D-E5E81B527464}.Release|x86.ActiveCfg = Release|x64
+		{57798E33-0084-4F84-810D-E5E81B527464}.Release|x86.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AAA725B6-1AF9-45DD-BAB4-EBF15A6DB5E7} = {DF0E3690-E61F-4DBE-91F9-27424F46C73D}
+		{57798E33-0084-4F84-810D-E5E81B527464} = {DF0E3690-E61F-4DBE-91F9-27424F46C73D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CF01BDA-4442-45E3-9516-EED7B625AD17}
+	EndGlobalSection
+EndGlobal

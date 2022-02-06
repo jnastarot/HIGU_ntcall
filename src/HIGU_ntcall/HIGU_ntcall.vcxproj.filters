@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ntdll">
+      <UniqueIdentifier>{4d06c60f-7387-4356-8fdb-af20ed7fbad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cleancall">
+      <UniqueIdentifier>{a1e69f1f-b999-4453-9ab7-5b05292489f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cleancall\32">
+      <UniqueIdentifier>{0acf2854-c411-48b3-8686-0d22a51ef5b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cleancall\64">
+      <UniqueIdentifier>{20f3417e-b3c3-4eba-a3dc-f1fa698ad3b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\syscall_table">
+      <UniqueIdentifier>{4d73bbc8-1ec7-4f1d-ba05-8e9e1b21ae16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll_functions.h">
+      <Filter>Source Files\ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="syscall_table_initialize.h">
+      <Filter>Source Files\syscall_table</Filter>
+    </ClInclude>
+    <ClInclude Include="syscall_table.h">
+      <Filter>Source Files\syscall_table</Filter>
+    </ClInclude>
+    <ClInclude Include="cleancall\cleancall.h">
+      <Filter>Source Files\cleancall</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll_3264_thunks.h">
+      <Filter>Source Files\ntdll</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ntdll_functions.cpp">
+      <Filter>Source Files\ntdll</Filter>
+    </ClCompile>
+    <ClCompile Include="syscall_table.cpp">
+      <Filter>Source Files\syscall_table</Filter>
+    </ClCompile>
+    <ClCompile Include="syscall_table_initialize.cpp">
+      <Filter>Source Files\syscall_table</Filter>
+    </ClCompile>
+    <ClCompile Include="cleancall\cleancall.cpp">
+      <Filter>Source Files\cleancall</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="cleancall\impl_cleancall_32.asm">
+      <Filter>Source Files\cleancall\32</Filter>
+    </MASM>
+    <MASM Include="cleancall\impl_cleancall_64.asm">
+      <Filter>Source Files\cleancall\64</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="$(SolutionDir)tmp\HIGU_ntcall_3264_Debug64\impl_syscall.obj">
+      <Filter>Source Files\cleancall\32</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)tmp\HIGU_ntcall_3264_Release64\impl_syscall.obj">
+      <Filter>Source Files\cleancall\32</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)tmp\HIGU_ntcall_3264_Debug64\ntcall3264.obj">
+      <Filter>Source Files\cleancall\32</Filter>
+    </Object>
+    <Object Include="$(SolutionDir)tmp\HIGU_ntcall_3264_Release64\ntcall3264.obj">
+      <Filter>Source Files\cleancall\32</Filter>
+    </Object>
+  </ItemGroup>
+</Project>
